@@ -3,9 +3,9 @@ export class Quote {
     public quote: string,
     public author: string,
     public personSubmitting: string,
-    public dateSubmitted?: Date,
-    public upVote?: number,
-    public downVote?: number
+    public dateSubmitted: Date,
+    public upVote: number,
+    public downVote: number
     )
 
     { 
