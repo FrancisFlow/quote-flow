@@ -1,0 +1,14 @@
+form-group {
+    padding: 12px;
+    margin:10px;
+}
+
+.formStyle {
+  display: block;
+  text-align: center;
+}
+button {
+    border-radius: 12px;
+    padding: 10px;
+    margin:20px;
+}
