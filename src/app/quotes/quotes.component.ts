@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Quote } from '../quote';
 import { QUOTES } from '../QUOTES';
 
@@ -10,14 +10,15 @@ import { QUOTES } from '../QUOTES';
 export class QuotesComponent implements OnInit {
   
   quotes = QUOTES;
-  selectedQuote?: Quote;
+ selectedQuote?: Quote;
+  onSelect(quote: Quote): void {
+    this.selectedQuote = quote;
+  }
 
   constructor() { }
   
   ngOnInit(): void {
   }
-  onSelect(quote: Quote): void {
-    this.selectedQuote = quote;
-  }
+
 
 }

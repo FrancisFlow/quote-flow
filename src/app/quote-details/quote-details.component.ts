@@ -1,31 +1,29 @@
-import { Component, OnInit, Input, } from '@angular/core';
-import { Quote } from '@angular/compiler';
-import { QuotesComponent } from '../quotes/quotes.component';
+
+import { Component, OnInit, Input } from '@angular/core';
+import { Quote } from '../quote';
+
 @Component({
   selector: 'app-quote-details',
   templateUrl: './quote-details.component.html',
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-
-  @Input () quote?:Quote;
+  @Input() quote?: Quote;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-    downTheVote() {
+  //   downTheVote() {
 
-      return this.quote.downVote++;
-  //  let voteString = ViewChild("downVote");
-  //   return parseInt(voteString) + 1;
+  //     return this.quote.upVote++
     
-  }
-    upTheVote() {
+  // }
+  //   upTheVote() {
       
-     return this.quote.upVote++;
+  //    return this.quote.upVote++;
 
-    }
+  //   }
 
 }

@@ -1,9 +1,10 @@
 
 
 <div *ngIf="quote">
+
     {{ quote.dateSubmitted | date }}
     <br>
-    <button #upVote class="btn" (click)= "upTheVote()">{{ quote.upVote}}</button>
-    <button #downVote class="btn" (click)="downTheVote()" > {{quote.downVote}}</button>
+    <button > {{ quote.upVote}}</button>
+    <button > {{quote.downVote}}</button>
 
 </div>

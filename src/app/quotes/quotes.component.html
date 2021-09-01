@@ -1,16 +1,16 @@
-<div>
-<ul class="quotes">
-    <li *ngFor='let quote of quotes'
-     [class.selected]="quote=== selectedQuote">
+<div *ngFor='let quote of quotes'
+[class.selected]="quote === selectedQuote" >
+<ul>
+    <li>
         {{quote.quote}}
         <br>
         {{quote.author}}
         <br>
         {{ quote.personSubmitting}}
         <br>
+        <br>
  <button class="btn btn-primary" (click)="onSelect(quote)"> Show details</button>
 </li>
 </ul>
-<app-quote-details [quote]="selectedQuote"></app-quote-details>
-
 </div>
+<app-quote-details *ngIf='selectedQuote' [quote]='selectedQuote'></app-quote-details>

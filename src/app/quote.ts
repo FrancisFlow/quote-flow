@@ -7,8 +7,8 @@ export class Quote {
     public upVote: number,
     public downVote: number
     )
+    
 
-    { 
+ {}
     
     }
-}
